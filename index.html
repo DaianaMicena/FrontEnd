@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        html,body{
+            height: 100%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid text-secondary h-100">
+        <div class="row h-100">
+            <div class="col-2 ">
+<!-- INICIO LOGO -->
+                <div class="text-center">
+                    <img src="./img/logo.png" class="w-75 mb-5 mt-3"/>
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-action"><i class="bi bi-eye-fill">&nbsp</i>DASHBOARD</li>
+                    <li class="list-group-item list-group-item-action"><i class="bi bi-card-list">&nbsp</i>LISTA</li>
+                    <li class="list-group-item list-group-item-action"><i class="bi bi-check">&nbsp</i>CADASTRO CLIENTE</li>
+                    <li class="list-group-item list-group-item-action"><i class="bi bi-clipboard-check">&nbsp</i>CADASTRO PRODUTO</li>
+                </ul>
+<!-- FINAL MENU -->
+            </div>
+<!-- INICIO CONTEUDO DA PAGINA -->
+            <div class="col-10 bg-light ">
+                <div class="row bg-white" style="height: 100px;">
+<!-- CSS -->
+                    <div class="col-12 h-100">
+                        <div class="row h-100">
+                            <div class="col-10"></div>
+                            <div class="col-2 h-100 text-end">
+                                <img src="./img/user.png" class="h-50 m-3"/>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>    
+<!-- INICIO CARD -->
+                 <div class="row mt-3 mb-5">
+                     <div class="col-3">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <!-- CSS -->
+                                <div class="bg-success text-white pt-2 rounded-circle text-center position-absolute top-0 end-0 m-2"
+                                    style="width: 3rem; height: 3rem; font-size: 20px;">
+                                    <i class="bi bi-wallet2 "></i>
+                                </div>
+                                <h3>SALDO DISPONIVEL</h3>
+                                <h1 class="text-success">R$ 2.000,00</h1>
+                            </div>
+                            <div class="card-footer bg-white borger-0">
+                                <p class="m-0">
+                                    <span class="fw-bold text-success"><i class="bi bi-arrow-up"></i>5.00%</span> a mais que o mês passado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-3">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <h3>SALDO BLOQUEADO</h3>
+                                <h1 class="text-danger">R$ 1.000,00</h1>
+                            </div>
+                            <div class="card-footer bg-white borger-0">
+                                <p class="m-0">
+                                    <span class="fw-bold text-danger"><i class="bi bi-arrow-down"></i>2.00%</span> a mais que o mês passado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <h3>SALDO A RECEBER</h3>
+                                <h1 class="text-info">R$ 5.000,00</h1>
+                            </div>
+                            <div class="card-footer bg-white borger-0">
+                                <p class="m-0">
+                                    <span class="fw-bold text-success">5.00%</span> a mais que o mês passado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <h3>TOTAL DE VENDAS</h3>
+                                <h1>R$ 3.000,00</h1>
+                            </div>
+                            <div class="card-footer bg-white borger-0">
+                                <p class="m-0">
+                                    <span class="fw-bold text-success">5.00%</span> a mais que o mês passado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                 </div>
+            <div>
+                <div class="card mt-3 mb-3">
+                    <div class="card">
+                        <div class="card-header border-0 bg-white">
+                            <i class="bi bi-funnel"></i> Filtro
+                        </div>
+                    </div>
+                    <div class="card-body row">
+                        <div class="col-3">
+                            <div class="form-floating mb-3">
+                                <input type="idProduto" class="form-control" id="idProduto" placeholder="0000000">
+                                <label for="idProduto">Id do Produto <i class="bi bi-eye-fill"></i></label>
+                            </div>                            
+                        </div>
+                        <div class="col-3">
+                            <div class="form-floating mb-3">
+                                <input type="nomeCliente" class="form-control" id="nomeCliente" placeholder="Joao Jose ">
+                                <label for="nomeCliente">Nome do cliente</label>
+                            </div>                             
+                        </div>
+                        <div class="col-3">
+                            <div class="form-floating mb-3">
+                                <input type="cpfCliente" class="form-control" id="cpfCliente" placeholder="111.222.333.77">
+                                <label for="cpfCliente">CPF do Cliente</label>
+                            </div>                             
+                        </div>
+                        <div class="col-3">
+                            <div class="form-floating mb-3">
+                                <input type="statusVenda" class="form-control" id="statusVenda" placeholder="xxxxxxxx">
+                                <label for="statusVenda">Status Venda</label>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="card-footer border-0">
+                        <button class="btn btn-sm btn-success"><i class="bi bi-search"></i> Consultar</button>
+                    </div>                    
+                </div>
+ <!-- FIM FILTRO
+INICIO TABELA -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h2>Vendas</h2>                 
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID PRODUTO</th>
+                                        <th>NOME PRODUTO</th>
+                                        <th>CLIENTE</th>
+                                        <th>VALOR</th>
+                                        <th>STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>BICICLETA</td>
+                                        <td>JEFFERSON</td>
+                                        <td>R$ 1.0000,00</td>
+                                        <td><span class="badge rounded-pill bg-warning text-dark">AGUARDANDO</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>MOTO</td>
+                                        <td>JOAO</td>
+                                        <td>R$ 5.0000,00</td>
+                                        <td><span class="badge rounded-pill bg-success">APROVADO</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CARRO</td>
+                                        <td>MARIA</td>
+                                        <td>R$ 15.0000,00</td>
+                                        <td><span class="badge rounded-pill bg-danger">CANCELADO</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>AVIAO</td>
+                                        <td>MAURICIO</td>
+                                        <td>R$ 55.0000,00</td>
+                                        <td><span class="badge rounded-pill bg-warning text-dark">AGUARDANDO</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                          
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+    </html>

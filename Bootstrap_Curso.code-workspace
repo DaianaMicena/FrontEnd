@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\FIAP\\Aula_HTML"
+		},
+		{
+			"path": "..\\FIAP\\HTML_Teste"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Aula_HTML"
+	}
+}
